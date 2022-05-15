@@ -18,6 +18,7 @@ class CompaniesController < ApplicationController
     @company["city"]= params["company"]["city"]
     @company["state"]= params["company"]["state"]
     @company.save
+    redirect_to "/companies"
   end
 
 end
